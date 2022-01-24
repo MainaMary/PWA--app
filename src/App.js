@@ -26,7 +26,8 @@ function App() {
 
   return (
     <div className="App">
-      <div>
+      <div className ="wrapper">
+        <h2>CRUD App</h2>
         <form
           className="add-user"
           onSubmit={(e) => {
@@ -42,8 +43,11 @@ function App() {
           {usersList.map((user) => {
             return (
               <div key={user.id}>
-                <p>{user.name}</p>
+               <div className='text-content'>
+               <p>{user.name}</p>
                 <p>{user.email}</p>
+               </div>
+              
                 <input
                   type="text"
                   placeholder="new name..."
