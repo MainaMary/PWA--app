@@ -13,15 +13,18 @@ export const userSlice = createSlice({
       state.value = state.value.filter((user) => user.id !== action.payload.id);
     },
 
-
+   
     updateUser: (state, action) =>{
-        state.value.forEach((user)=>{
-            console.log(`user updated ${user.id}  ${action.payload.name}`)
+      console.log( {state: state.value})
+      console.log({ payload: action.payload })
+        state.value.map((user)=>{
+            //console.log(`user updated ${user.id}  ${action.payload.name}`)
+            if(user.id === action.payload.id){
+              user.name = action.payload.name
+            }
             
-            const newUser =  user.name = action.payload.name
-            const newName = user.id === action.payload.id ? newUser : null
 
-            return newName
+            return user
         }
         )
     }

@@ -1,16 +1,16 @@
 export const userData = [
     {
         id: 1,
-        name: "Lukas Graham",
-        email :"lukas@gmail.com"
+        name: "Atomic Habits",
+        
 
     },{
         id: 2,
-        name: "Sam Smith",
-        email :"smith@gmail.com"
+        name: "The clean code",
+        
     },{
         id: 3,
-        name: "john Legend",
-        email :"lenged@gmail.com"
+        name: "Rich Dad",
+        
     }
 ]
